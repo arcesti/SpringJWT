@@ -18,4 +18,12 @@ public class AcessoService {
         }
         return token;
     }
+
+    public boolean validarToken(String token) {
+        try {
+            return JWTTokenProvider.verifyToken(token);
+        } catch (Exception e) {
+            return false;
+        }
+    }
 }

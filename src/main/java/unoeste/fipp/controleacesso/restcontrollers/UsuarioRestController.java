@@ -63,7 +63,7 @@ public class UsuarioRestController {
         if(usuarioService.delete(id)) {
             return ResponseEntity.noContent().build();
         }
-        return ResponseEntity.badRequest().body("erro ao deletar usuario!");
+        return ResponseEntity.badRequest().body("Erro ao deletar usuario!");
     }
 
 //    @GetMapping(value = "getUserByName/{name}")
